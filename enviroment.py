@@ -1,6 +1,6 @@
 import gymnasium as gym
 import numpy as np
-
+import unoaiinterface as uno
 
 class Uno(gym.Env):
     def __init__(self):
@@ -22,3 +22,6 @@ class Uno(gym.Env):
     def close(self):
         pass
 
+# Make uno game using interface
+deck = uno.Deck()
+discard = uno.Discard()
